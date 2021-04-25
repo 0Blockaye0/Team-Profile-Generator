@@ -33,5 +33,6 @@ test("retruns new emplyee obj email", () => {
 test("retruns new emplyee obj role", () => {
     const employee = new Employee("James Franco", "jamiefranco@gwhale.com");
 
-    expect(employee.role).toBe("Employee")
+    expect(employee.role).toBe("Employee");
+    expect(employee.getRole()).toBe("Employee");
 })
