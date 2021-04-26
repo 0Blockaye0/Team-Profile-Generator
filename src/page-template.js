@@ -10,8 +10,8 @@ const  generateEmployeeCards = (array) => {
 
     // const {Manager, Engineer, Intern} = array
     array.forEach(element => {
-      if (element.role = "Manager") {
-        console.log("this", element); 
+      if (element.role === "Manager") {
+        console.log(element); 
         // consolelog is working but there seems to be some issue with returning for each item in the array. may need to rethink this logic
         return `
         <div class="card">
@@ -25,7 +25,7 @@ const  generateEmployeeCards = (array) => {
         </div>
         `;
       }
-      if (element.role = "Engineer") {
+      if (element.role === "Engineer") {
         console.log(element);
         return `
         <div class="card">
@@ -39,7 +39,7 @@ const  generateEmployeeCards = (array) => {
         </div>
         `;
       }
-      if (element.role = "Intern") {
+      if (element.role === "Intern") {
         console.log(element);
         return `
         <div class="card">
@@ -57,6 +57,8 @@ const  generateEmployeeCards = (array) => {
 };
 
 const generateHTML = (array) => {
+  console.log("this should be the array...", array);
+  console.log("this is the generateEmplyeeCards(array) log", generateEmployeeCards(array)); // return undifined
   return `
     <!DOCTYPE html>
     <html lang="en">
@@ -78,5 +80,6 @@ const generateHTML = (array) => {
     </html>
     `;
 };
+
 
 module.exports = generateHTML;
