@@ -2,7 +2,8 @@ const inquirer = require("inquirer");
 const Manager = require("./lib/Manager");
 const Engineer = require("./lib/Engineer");
 const Intern = require("./lib/Intern");
-const generatedHTML = require("./src/page-template");
+const generateHTML = require("./src/page-template");
+const writeFile = require("./Develop/Utils/generateSite")
 
 let dataArr = [];
 
@@ -113,7 +114,7 @@ const addOrDone = () => {
     .then((data) => {
       // console.log(data);
         if (data.addOrDone === "I'm all finished.") {
-          generatedHTML(dataArr).then(res => console.log("this is the response...", res));
+          writeFile(generateHTML(dataArr));
         }
         if (data.addOrDone === "Add an Engineer") {
           getEngineerInfo();
