@@ -1,12 +1,9 @@
 
-
-
 const  generateEmployeeCards = (array) => {
     let stringRespone = ""
 
     array.forEach(element => {
-      if (element.role === "Manager") {
-        console.log(element); 
+      if (element.role === "Manager") { 
         stringRespone +=  `
         <div class="card">
           <div class="icons">
@@ -23,7 +20,6 @@ const  generateEmployeeCards = (array) => {
         `;
       }
       if (element.role === "Engineer") {
-        console.log(element);
         stringRespone +=  `
         <div class="card">
         <div class="icons">
@@ -42,7 +38,6 @@ const  generateEmployeeCards = (array) => {
         `;
       }
       if (element.role === "Intern") {
-        console.log(element);
         stringRespone +=  `
         <div class="card">
         <div class="icons">
@@ -64,8 +59,6 @@ const  generateEmployeeCards = (array) => {
 
 const generateHTML = (array) => {
   generateEmployeeCards(array);
-  console.log("this should be the array...", array);
-  console.log("this is the generateEmplyeeCards(array) log", generateEmployeeCards(array));
   return `
     <!DOCTYPE html>
     <html lang="en">
@@ -91,6 +84,5 @@ const generateHTML = (array) => {
     </html>
     `;
  };
-
 
 module.exports = generateHTML;
