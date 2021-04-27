@@ -125,6 +125,6 @@ const addOrDone = () => {
     });
 };
 
-getManagerInfo()
+getManagerInfo();
 
 module.exports = dataArr;

@@ -1,3 +1,7 @@
+* {
+  font-family: 'Antonio', sans-serif;
+}
+
 body {
     height: auto;
     background-color: dimgrey;
@@ -13,6 +17,7 @@ header {
     background-image: linear-gradient(45deg, #e00a0a, #6f0000);
     margin-bottom: 50px;
     color: aliceblue;
+    font-size: xx-large;
 }
 
 .main {
@@ -28,6 +33,7 @@ header {
     width: 200px;
     background-color: ghostwhite;
     margin: 20px;
+    font-size: 19px;
   }
   
   /* On mouse-over, add a deeper shadow */
@@ -47,6 +53,8 @@ header {
     padding-bottom: 20px;
     background-image: linear-gradient(45deg, #7d7d7d, white);
     border-bottom: 3px #ce1336 solid;
-  };
+  }
 
-  
+  a {
+    color: red;
+  };
