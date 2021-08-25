@@ -59,7 +59,7 @@
 
   ## Tests
 
-  The Employees Class and the classes built from that class, all have test on their properties and methods. You may run these tests by running the command “nom test”, which will run a test for all suites. For a more specific test, run “nom test <thisFile.js>”, and replace <thisFile.js> with the file name you wish to test. All files that be tested are located in the “lib” directory.
+  The Employees Class and the classes built from that class, all have test on their properties and methods. You may run these tests by running the command “npm test”, which will run a test for all suites. For a more specific test, run “npm test <thisFile.js>”, and replace <thisFile.js> with the file name you wish to test. All files that be tested are located in the “lib” directory.
 
 
   ## Contributing
